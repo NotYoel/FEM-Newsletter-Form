@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main id="main-card">
+    <div class="main-container">
+      <section class="main-left">
+        <div class="left-container">
+          <span class="left-title"><span class="bold">Stay updated!</span></span>
+          <span class="left-description"><span class="normal-text">Join 60,000+ product managers receiving monthly updates on:</span></span>
+
+          <ul class="left-list">
+            <li class="left-list-item"><img src="assets/images/icon-list.svg" alt=""><span class="normal-text">Product discovery and building what matters</span></li>
+            <li class="left-list-item"><img src="assets/images/icon-list.svg" alt=""><span class="normal-text">Measuring to ensure updates are a success</span></li>
+            <li class="left-list-item"><img src="assets/images/icon-list.svg" alt=""><span class="normal-text">And much more!</span></li>
+          </ul>
+
+          <form class="left-form" action="">
+            <div class="form-top-labels">
+              <label for="email-address"><span class="normal-text bold">Email address</span></label>
+              <span id="error-text" class="bold"></span>
+            </div>
+
+            <input type="email" id="email-address" name="email-address" placeholder="email@company.com" autocomplete="off" >
+
+            <input id="submit-button" type="button" value="Subscribe to monthly newsletter">
+          </form>
+        </div>
+      </section>
+
+      <section class="main-right">
+        <img id="desktop-image" src="assets/images/illustration-sign-up-desktop.svg" alt="">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="" id="mobile-image">
+      </section>
+    </div>
+  </main>
+
+  <div id="success-card" class="hidden">
+    <div class="success-container">
+      <img src="assets/images/icon-success.svg" alt="">
+      <span class="success-title"><span class="bold">Thanks for subscribing!</span></span>
+      <span id="success-description" class="normal-text">
+        A confirmation email has been sent to <span class="bold">{email_address}</span>
+        Please open it and click the button inside to confirm your subscription.
+      </span>
+      <button id="dismiss-message">
+        Dismiss message
+      </button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://www.github.com/NotYoel">NotYoel</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
