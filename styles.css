@@ -212,9 +212,12 @@ button:hover,
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        height: max-content;
+    }
+
     main {
         width: 100%;
-        height: max-content;
         border-radius: 0;
         padding-top: 0;
         padding-left: 0;
